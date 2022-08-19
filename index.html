@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: black;
+        }
+        div {        
+            text-align: center;
+            text-shadow: #5556Ff;
+            font-size: 30px;
+            color: black;
+            margin: auto;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+        .div {        
+            text-align: center;
+            text-shadow: #5556Ff;
+            font-size: 30px;
+            color: pink;
+            margin: auto;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .lark {
+            text-align: center;
+            text-shadow: yellow;
+            font-size: 30px;
+            color: yellow;
+            margin: auto;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+            background-color: black;         
+        }
+        button {
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 20px;
+            border: none;
+            padding: 20px;
+            margin: 20px;
+            cursor: pointer;
+            background-color: gold;
+        }
+    </style>
+ </head>
+ <body>
+    <h1>hello world</h1>
+    <div></div>
+    <br>
+    <div></div>
+    <br>
+    <div></div>
+    <br>
+    <div class="div">안녕하세요</div>
+    <br>
+    <div class="btn">
+        <button onclick="printBtn()">눌러주세요</button>
+    </div>
+    <br>
+    <div class="lark">안녕</div>
+ </body>
+
+ <script>
+    const divBox = document.querySelector(".div");
+    console.log(divBox.innerText);
+    const larkBox = document.querySelector(".lark");
+    console.log(larkBox.innerText);
+    function printBtn() {
+        console.log("버튼을 눌렀다!");
+        larkBox.innerText = "우리사랑해요";
+        setTimeout(() => {
+            larkBox.innerText = "장";
+        }, 500);
+        setTimeout(() => {
+            larkBox.innerText = "기";
+        }, 1000);
+        setTimeout(() => {
+            larkBox.innerText = "원";
+        }, 1500);
+        setTimeout(() => {
+            larkBox.innerText = "♥";
+        }, 2000);
+        setTimeout(() => {
+            larkBox.innerText = "김";
+        }, 2500);
+        setTimeout(() => {
+            larkBox.innerText = "태";
+        }, 3000);
+        setTimeout(() => {
+            larkBox.innerText = "형";
+        }, 3500);
+        setTimeout(() => {
+            larkBox.innerText = "안녕";
+        }, 4000);
+    }
+ </script>
+</html>
